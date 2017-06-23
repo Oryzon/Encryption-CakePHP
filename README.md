@@ -12,9 +12,11 @@ This component works with CakePHP 3.x.
 Very simple to use it.
 
 In your controller, add :
+  
   use App\Controller\Component\EncryptionComponent;
 
 And for use it, juste write :
+  
   $messageCrypt = EncryptionComponent::Crypt('Hello World', $your_salt);
   $messageDecrypt = EncryptionComponent::Decrypt($messageCrypt, $your_salt);
 
