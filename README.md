@@ -18,6 +18,7 @@ In your controller, add :
 And for use it, juste write :
   
   $messageCrypt = EncryptionComponent::Crypt('Hello World', $your_salt);
+  
   $messageDecrypt = EncryptionComponent::Decrypt($messageCrypt, $your_salt);
 
 Very simple, very quick.
